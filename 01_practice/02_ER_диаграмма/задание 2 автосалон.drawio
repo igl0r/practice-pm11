@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="cYncOo8ZqdlFe1qAHmfl">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="brand" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="Mark" vertex="1">
+          <mxGeometry height="108" width="220" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" parent="brand" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=4;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="PK&amp;nbsp; mark_id" vertex="1">
+          <mxGeometry height="26" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="b2" parent="brand" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="name" vertex="1">
+          <mxGeometry height="26" width="220" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="b3" parent="brand" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="made_at" vertex="1">
+          <mxGeometry height="26" width="220" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="car" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="Car" vertex="1">
+          <mxGeometry height="186" width="220" x="360" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=4;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="PK&amp;nbsp; car_id" vertex="1">
+          <mxGeometry height="26" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=2;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="FK&amp;nbsp; mark_id ^" vertex="1">
+          <mxGeometry height="26" width="220" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="model" vertex="1">
+          <mxGeometry height="26" width="220" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="created_year" vertex="1">
+          <mxGeometry height="26" width="220" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="colour" vertex="1">
+          <mxGeometry height="26" width="220" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="car" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="price" vertex="1">
+          <mxGeometry height="26" width="220" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="sale" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="Sale" vertex="1">
+          <mxGeometry height="186" width="220" x="640" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=4;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="PK&amp;nbsp; sale_id" vertex="1">
+          <mxGeometry height="26" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=2;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="FK&amp;nbsp; car_id ^" vertex="1">
+          <mxGeometry height="26" width="220" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=2;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="FK&amp;nbsp; client_id ^" vertex="1">
+          <mxGeometry height="26" width="220" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=2;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="FK&amp;nbsp; employee_id ^" vertex="1">
+          <mxGeometry height="26" width="220" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="sale_date" vertex="1">
+          <mxGeometry height="26" width="220" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="s6" parent="sale" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="price_total" vertex="1">
+          <mxGeometry height="26" width="220" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="client" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="Client" vertex="1">
+          <mxGeometry height="134" width="220" x="920" as="geometry" />
+        </mxCell>
+        <mxCell id="k1" parent="client" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=4;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="PK&amp;nbsp; client_id" vertex="1">
+          <mxGeometry height="26" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="k2" parent="client" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="fio" vertex="1">
+          <mxGeometry height="26" width="220" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="k4" parent="client" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="phone" vertex="1">
+          <mxGeometry height="26" width="220" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="k5" parent="client" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="address" vertex="1">
+          <mxGeometry height="26" width="220" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="emp" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;collapsible=0;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="Employee" vertex="1">
+          <mxGeometry height="160" width="220" x="920" y="266" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="emp" style="text;align=left;verticalAlign=middle;spacingLeft=6;fontStyle=4;html=1;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="PK&amp;nbsp; employee_id" vertex="1">
+          <mxGeometry height="26" width="220" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="emp" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="full_name" vertex="1">
+          <mxGeometry height="26" width="220" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="emp" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="position" vertex="1">
+          <mxGeometry height="26" width="220" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="emp" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="phone_number" vertex="1">
+          <mxGeometry height="26" width="220" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="emp" style="text;align=left;verticalAlign=middle;spacingLeft=30;html=1;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" value="hired_at" vertex="1">
+          <mxGeometry height="26" width="220" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="b1" style="edgeStyle=entityRelationEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" target="c2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="c1" style="edgeStyle=entityRelationEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontStyle=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;verticalAlign=middle;rounded=0;curved=0;strokeColor=default;swimlaneLine=1;" target="s2" value="">
+          <mxGeometry relative="1" x="0.0042" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="k1" style="edgeStyle=entityRelationEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" target="s3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="p1" style="edgeStyle=entityRelationEdgeStyle;html=1;startArrow=ERmandOne;endArrow=ERzeroToMany;startFill=0;endFill=0;fontStyle=0;strokeColor=default;rounded=0;curved=0;swimlaneLine=1;" target="s4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
